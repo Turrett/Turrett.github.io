@@ -29,5 +29,49 @@
             </ul>
         </div>
     </section>
+
+    <section class="competenze">
+        <h2>Competenze</h2>
+        <div class="skill">
+            <span class="skill-name">Java</span>
+            <div class="skill-bar-container">
+                <div class="skill-bar" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span class="skill-name">Spring Boot</span>
+            <div class="skill-bar-container">
+                <div class="skill-bar" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-bar-container">
+                <div class="skill-bar" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span class="skill-name">HTML/CSS</span>
+            <div class="skill-bar-container">
+                <div class="skill-bar" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span class="skill-name">Database (SQL)</span>
+            <div class="skill-bar-container">
+                <div class="skill-bar" style="width: 75%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const skillBars = document.querySelectorAll('.skill-bar');
+            skillBars.forEach(bar => {
+                const skillLevel = bar.style.width;
+                bar.style.setProperty('--skill-level', skillLevel);
+            });
+        });
+    </script>
 </body>
 </html>
