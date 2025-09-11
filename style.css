@@ -2,12 +2,12 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     margin: 0;
-    background-color: #f7f9f7; /* Very light, almost white background */
-    color: #333;
+    background-color: #F4F6F8; /* New: Off-White */
+    color: #333E4F; /* New: Dark Charcoal */
     text-rendering: optimizeLegibility;
-    min-height: 100vh; /* Ensure body takes full height */
+    min-height: 100vh;
     position: relative;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
 }
 
 body::before, body::after {
@@ -20,34 +20,34 @@ body::before, body::after {
     transform: translate(-50%, -50%) rotateX(60deg) rotateZ(45deg);
     background-size: 50px 50px; /* Size of the checkerboard squares */
     z-index: -1;
-    opacity: 0.05; /* Subtle transparency */
+    opacity: 0.08; /* Slightly more visible background */
 }
 
 body::before {
-    background-image: linear-gradient(45deg, #e0e0e0 25%, transparent 25%, transparent 75%, #e0e0e0 75%, #e0e0e0), 
-                      linear-gradient(45deg, #e0e0e0 25%, transparent 25%, transparent 75%, #e0e0e0 75%, #e0e0e0);
+    background-image: linear-gradient(45deg, #E8ECF0 25%, transparent 25%, transparent 75%, #E8ECF0 75%, #E8ECF0), 
+                      linear-gradient(45deg, #E8ECF0 25%, transparent 25%, transparent 75%, #E8ECF0 75%, #E8ECF0);
     background-position: 0 0, 25px 25px; /* Offset for checkerboard */
 }
 
 body::after {
-    background-image: linear-gradient(-45deg, #d0d0d0 25%, transparent 25%, transparent 75%, #d0d0d0 75%, #d0d0d0), 
-                      linear-gradient(-45deg, #d0d0d0 25%, transparent 25%, transparent 75%, #d0d0d0 75%, #d0d0d0);
+    background-image: linear-gradient(-45deg, #D6DBDF 25%, transparent 25%, transparent 75%, #D6DBDF 75%, #D6DBDF), 
+                      linear-gradient(-45deg, #D6DBDF 25%, transparent 25%, transparent 75%, #D6DBDF 75%, #D6DBDF);
     background-position: 0 0, 25px 25px; /* Offset for checkerboard */
     transform: translate(-50%, -50%) rotateX(60deg) rotateZ(-45deg); /* Different rotation for second layer */
-    opacity: 0.03;
+    opacity: 0.05;
 }
 
 header {
     text-align: center;
     padding: 40px 20px;
-    background-color: #ff6f61; /* Vibrant, fun color */
+    background-color: #82A7C9; /* New: Dusty Blue */
     color: #fff;
     margin-bottom: 25px;
     box-shadow: none; /* Minimalist: remove shadow */
 }
 
 h1 {
-    color: #fff;
+    color: #FFFFFF; /* New: Pure White */
     font-size: 2.8em;
     margin-bottom: 8px;
     letter-spacing: 1px;
@@ -55,27 +55,27 @@ h1 {
 
 header p {
     font-size: 1.2em;
-    color: #ffe0d9; /* Lighter color for description */
+    color: #D6E4F0; /* New: Lighter Dusty Blue */
     margin-top: 0;
 }
 
 section {
-    background-color: #ffffff;
+    background-color: #FFFFFF; /* New: Pure White */
     margin: 15px auto;
     padding: 25px;
     border-radius: 6px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.03); /* Lighter, subtle shadow */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.02); /* Adjusted shadow */
     max-width: 800px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
 }
 
 section:hover {
     transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Adjusted hover shadow */
 }
 
 h2 {
-    color: #333;
+    color: #333E4F; /* New: Dark Charcoal */
     border-bottom: none; /* Minimalist: remove underline */
     padding-bottom: 5px;
     margin-bottom: 15px;
@@ -83,13 +83,13 @@ h2 {
 }
 
 a {
-    color: #ff6f61; /* Vibrant link color */
+    color: #FF7F50; /* New: Muted Coral */
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a:hover {
-    color: #ffa07a; /* Lighter on hover */
+    color: #FFA07A; /* Lighter on hover */
     transform: translateY(-2px);
 }
 
@@ -103,13 +103,13 @@ a:hover {
 .esperienza li {
     margin-bottom: 8px;
     line-height: 1.5;
-    color: #555;
+    color: #6C7B8A; /* New: Medium Gray */
 }
 
 .esperienza div {
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px dashed #e0e0e0; /* Lighter dashed line */
+    border-bottom: 1px dashed #E0E4E8; /* New: Light Gray-Blue */
 }
 
 .esperienza div:last-child {
@@ -117,13 +117,13 @@ a:hover {
 }
 
 .esperienza h3 {
-    color: #444;
+    color: #333E4F; /* New: Dark Charcoal */
     margin-bottom: 3px;
     font-size: 1.1em;
 }
 
 .esperienza p {
-    color: #777;
+    color: #6C7B8A; /* New: Medium Gray */
     font-size: 0.85em;
     margin-bottom: 8px;
 }
