@@ -8,70 +8,31 @@
 </head>
 <body>
     <header>
-        <h1>Luca Turretti</h1>
-        <p>Full Stack Software Developer</p>
+        <div class="header-top">
+            <div>
+                <h1>Luca Turretti</h1>
+                <p>Full Stack Software Developer</p>
+            </div>
+            <div class="theme-control">
+                <input id="theme-toggle" class="toggle" type="checkbox" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">
+                <div class="curtain" aria-hidden="true"></div>
+            </div>
+        </div>
     </header>
     <section class="dettagli">
         <h2>Dettagli</h2>
-        <ul>
-            <li>Email: lucaturretti@gmail.com</li>
-            <li>Linkedin : </li>
-        </ul>
+        <ul id="details-list"></ul>
     </section>
     <section class="esperienza">
         <h2>Esperienza Lavorativa</h2>
-        <div>
-            <h3>Junior Software Developer | OT Consulting</h3>
-            <p>05/2021- 02-2023</p>
-            <ul>
-                <li>Attività di sviluppo e Application Maintenance inerenti all'area di back-end per un cliente Bancario. In particolare manutenzione e interventi di miglioramento del sistema ESB e sviluppo di microservizi Java</li>
-                <li>sviluppo applicativo custom Java Springboot per la notifica telefonica di eventi in tempo reale</li>
-            </ul>
-        </div>
+        <div id="experience-list"></div>
     </section>
 
     <section class="competenze">
         <h2>Competenze</h2>
-        <div class="skill">
-            <span class="skill-name">Java</span>
-            <div class="skill-bar-container">
-                <div class="skill-bar" style="width: 85%;"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span class="skill-name">Spring Boot</span>
-            <div class="skill-bar-container">
-                <div class="skill-bar" style="width: 80%;"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span class="skill-name">JavaScript</span>
-            <div class="skill-bar-container">
-                <div class="skill-bar" style="width: 70%;"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span class="skill-name">HTML/CSS</span>
-            <div class="skill-bar-container">
-                <div class="skill-bar" style="width: 90%;"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <span class="skill-name">Database (SQL)</span>
-            <div class="skill-bar-container">
-                <div class="skill-bar" style="width: 75%;"></div>
-            </div>
-        </div>
+        <div id="skills-list"></div>
     </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const skillBars = document.querySelectorAll('.skill-bar');
-            skillBars.forEach(bar => {
-                const skillLevel = bar.style.width;
-                bar.style.setProperty('--skill-level', skillLevel);
-            });
-        });
-    </script>
+    <script src="skills.js"></script>
 </body>
 </html>
